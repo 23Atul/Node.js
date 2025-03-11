@@ -1,0 +1,13 @@
+
+ES MODULES ( mjs )
+--> uses import and export to use files.
+--> by default used in React, angular
+--> need to implement in node to use it.
+--> newer way of doing things
+--> to use it we need to make package.json file and include module into it
+
+package.json:
+{
+    "type" : "module"
+}
+
