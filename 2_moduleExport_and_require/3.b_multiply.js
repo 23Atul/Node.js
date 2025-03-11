@@ -8,8 +8,11 @@ function calcProduct(a,b){
 
 // when we want to export 2 or more values from the same file we export it in form of Object.
 
-module.exports={
+// old way
+// module.exports={
+//     elem : elem,
+//     calcProduct : calcProduct
+// };
 
-    elem : elem,
-    calcProduct : calcProduct
-};
+// new way
+module.exports = {elem,calcProduct}; 
