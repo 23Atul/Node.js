@@ -1,0 +1,16 @@
+
+there are two types of module pattern being followed.
+1. common js modules (cjs)
+2. ES modules (mjs)
+----------------------------------------------
+
+COMMON JS MODULES
+--> by default used in Node.js
+--> uses module.export and require() 
+--> older way of doing things
+
+// no need to do this as this json is by default included in node.js
+package.json:
+{
+    "type" : "common"
+}
