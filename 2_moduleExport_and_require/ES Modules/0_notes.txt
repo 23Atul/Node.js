@@ -11,3 +11,5 @@ package.json:
     "type" : "module"
 }
 
+--> we have an option of Async also.
+--> strict mode is by-default ie. even if we miss var,let,const before variable it will throw error.

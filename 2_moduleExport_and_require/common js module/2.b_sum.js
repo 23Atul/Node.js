@@ -5,7 +5,7 @@ console.log("welcome to sum module");
 // by default modules protech them from leaking.
 
 
-function calculateSum(x,y,z){
+function calculateSum(x=0,y=0,z=0){
     const sum = x+y+z;
 
     console.log(sum);

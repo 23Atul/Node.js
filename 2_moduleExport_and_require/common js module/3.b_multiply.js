@@ -14,5 +14,15 @@ function calcProduct(a,b){
 //     calcProduct : calcProduct
 // };
 
+//or 
+
+// module.exports.elem = elem;
+// module.exports.calcProducr = calcProduct;
+
+// or
+
 // new way
 module.exports = {elem,calcProduct}; 
+
+
+

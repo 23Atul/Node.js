@@ -12,5 +12,17 @@ COMMON JS MODULES
 // no need to do this as this json is by default included in node.js
 package.json:
 {
-    "type" : "common"
+    "type" : "commonjs"
 }
+
+--> when commonjs is requiring a module it does it in a synchronous way.
+ie. untill the require has loaded all other line of codes remain blocked.
+--> run in non strict mode. ie. even if we miss var,let,const before variable it will not throw error.
+
+-----------------------------------------------------------------------------------
+
+// what is module.exports?
+
+console.log(module.exports);
+// {}
+// it is an empty object

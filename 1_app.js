@@ -1,3 +1,4 @@
+// ---------------------------- day - 1 --------------------------------
 
 var name = "Atul Raman";
 
@@ -84,3 +85,26 @@ console.log(global === globalThis);
 // true
 
 
+// --------------------------- day - 2 ------------------------------
+
+// we can create nested module ie. one inside other and use them when needed.
+
+// pattern 1
+// we can require 1 or more files from the folder 
+var calculateSum = require("./2_moduleExport_and_require/common js module/2.b_sum.js")
+var { calcProduct } = require("./2_moduleExport_and_require/common js module/3.b_multiply.js")
+var a = 150
+var b = 20
+
+calcProduct(a, b) // 3000
+calculateSum(a, b) // 170
+
+
+
+// pattern 2
+// here we require the whole folder as a module.
+
+var {calculateSum, calcProduct} = require("./2_moduleExport_and_require/common js module/4_index.js");
+
+calculateSum(100, 800); // 900
+calcProduct(99, 100); // 9900
