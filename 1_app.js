@@ -108,3 +108,11 @@ var {calculateSum, calcProduct} = require("./2_moduleExport_and_require/common j
 
 calculateSum(100, 800); // 900
 calcProduct(99, 100); // 9900
+
+
+
+// we can even import a json file
+
+const data = require("./2_moduleExport_and_require/common js module/5_data.json")
+console.log(data);
+// { name: 'Atul Raman', city: 'Ranchi', phn: 6206020674 }
